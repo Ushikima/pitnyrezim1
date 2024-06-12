@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/glassImageView"
+            android:layout_width="252dp"
+            android:layout_height="252dp"
+            android:src="@drawable/sklenice"
+            app:srcCompat="@drawable/sklenice" />
+
+        <TextView
+            android:id="@+id/totalWaterAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celkové množství: 0 ml"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/waterInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zadejte množství vody v ml"
+            android:inputType="number"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Přidat"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/resetNoteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musíte ideálně vypít přes 1500ml tekutin"
+            android:textSize="12sp"
+            android:textColor="#808080"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/checkWaterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zkontrolovat množství"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/historyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historie:"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
